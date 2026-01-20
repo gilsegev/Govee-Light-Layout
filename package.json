@@ -17,7 +17,7 @@
         "tailwindcss": "^3.4.17",
         "typescript": "5.9.3"
     },
-    "name": "project",
+    "name": "govee-layout-calculator",
     "version": "1.0.0",
     "description": "A visual tool to help DIY homeowners plan the exact placement of Govee Pro permanent outdoor lights. It visualizes soffit length, puck placement, and warns about wire slack issues.",
     "main": "index.js",

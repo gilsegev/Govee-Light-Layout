@@ -6,7 +6,7 @@ import { calculateLayout } from '../lib/algorithms/index';
 interface LayoutState {
   config: LayoutConfig;
   results: LayoutResult;
-  
+
   // Actions
   updateConfig: (updates: Partial<LayoutConfig>) => void;
   updatePeakConfig: (updates: Partial<PeakConfig>) => void;
@@ -24,7 +24,7 @@ const INITIAL_CONFIG: LayoutConfig = {
   },
   runLengthFeet: 10,
   runLengthInches: 0,
-  targetSpacing: 12, 
+  targetSpacing: 19.5, // User specified 19.5" 
   startBuffer: 4,
   endBuffer: 4,
   alignmentStrategy: 'centric',
@@ -32,7 +32,7 @@ const INITIAL_CONFIG: LayoutConfig = {
 
 export const useLayoutStore = create<LayoutState>((set, get) => ({
   config: INITIAL_CONFIG,
-  
+
   // Initial calculation
   results: calculateLayout(INITIAL_CONFIG),
 
